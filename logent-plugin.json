@@ -1,0 +1,9 @@
+{
+  "id": "com.sleepysoong.logent.galaxy",
+  "key": "sleepysoong:galaxy",
+  "name": "Galaxy",
+  "entry": "com.sleepysoong.logent.galaxy.GalaxyPlugin",
+  "dependencies": [],
+  "apiMin": 4,
+  "apiMax": 4
+}

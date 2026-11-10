@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Android 11 이상의 패키지 공개 범위에서 삼성 앱 설치 여부와 실행 activity를
+        확인하려면 대상 패키지를 선언해야 해요. QUERY_ALL_PACKAGES 권한은 쓰지 않아요.
+    -->
+    <queries>
+        <package android:name="com.samsung.android.app.notes" />
+        <package android:name="com.samsung.android.app.reminder" />
+        <package android:name="com.samsung.android.messaging" />
+        <package android:name="com.samsung.android.dialer" />
+        <package android:name="com.samsung.android.contacts" />
+        <package android:name="com.samsung.android.calendar" />
+        <package android:name="com.sec.android.gallery3d" />
+        <package android:name="com.sec.android.app.myfiles" />
+        <package android:name="com.sec.android.app.shealth" />
+        <package android:name="com.samsung.android.spay" />
+        <package android:name="com.samsung.android.oneconnect" />
+        <package android:name="com.samsung.android.app.routines" />
+        <package android:name="com.samsung.knox.securefolder" />
+        <package android:name="com.samsung.android.app.watchmanager" />
+        <package android:name="com.samsung.accessory.buds" />
+        <package android:name="com.samsung.android.themestore" />
+        <package android:name="com.samsung.android.voc" />
+        <package android:name="com.sec.android.app.samsungapps" />
+        <package android:name="com.sec.android.app.sbrowser" />
+        <package android:name="com.sec.android.app.camera" />
+        <package android:name="com.sec.android.app.clockpackage" />
+        <package android:name="com.sec.android.app.popupcalculator" />
+        <package android:name="com.samsung.android.daemonapp" />
+        <package android:name="com.samsung.android.bixby.agent" />
+        <package android:name="com.samsung.android.dex" />
+        <package android:name="com.samsung.android.knox.attestation" />
+        <package android:name="com.knox.vpn.proxyhandler" />
+        <package android:name="com.samsung.android.settings" />
+        <package android:name="com.android.settings" />
+        <package android:name="com.android.vending" />
+
+        <intent>
+            <action android:name="android.intent.action.INSERT" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.SENDTO" />
+            <data android:scheme="sms" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+            <data android:scheme="samsungapps" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+            <data android:scheme="market" />
+        </intent>
+        <intent>
+            <action android:name="android.settings.SETTINGS" />
+        </intent>
+    </queries>
+</manifest>
